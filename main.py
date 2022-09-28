@@ -1,4 +1,3 @@
-import requests
 import zeep
 
 wsdl = 'http://www.dneonline.com/calculator.asmx?WSDL'
@@ -15,6 +14,3 @@ print(responseMultiply)  # result: 20
 
 responseDivide = client.service.Divide(100, 20)
 print(responseDivide)  # result: 5
-
-# prints the response
-# print(result)
